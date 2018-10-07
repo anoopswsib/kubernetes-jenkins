@@ -76,8 +76,7 @@ volumes:[
 
         // perform docker login
         withCredentials([[$class: 'UsernamePasswordMultiBinding', credentialsId: jenkins_registry_cred_id, usernameVariable: 'USERNAME', passwordVariable: 'PASSWORD']]) {
-            echo ${env.USERNAME}
-            sh "docker login -u ${env.USERNAME} -p ${env.PASSWORD} ${docker_registry_url}"
+          sh "docker login -u ${env.USERNAME} -p ${env.PASSWORD} ${docker_registry_url}"
         }
 
         // build and publish container
