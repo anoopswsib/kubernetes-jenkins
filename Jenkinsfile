@@ -21,8 +21,8 @@ volumes:[
     def pwd = pwd()
     def chart_dir = "${pwd}/charts/hellojava"
     def tags = [env.BUILD_TAG, 'latest']
-    def docker_registry_url = "jcorioland.azurecr.io"
-    def app_hostname = "hellojava.aks.jcorioland.io";
+    def docker_registry_url = "wsibprivateregistry.azurecr.io"
+    def app_hostname = "hellojava.aks.wsibprivateregistry.azurecr.io";
     def docker_email = "jucoriol@microsoft.com"
     def docker_repo = "hellojava"
     def docker_acct = "kubernetes"
