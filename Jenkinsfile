@@ -26,7 +26,7 @@ volumes:[
     def docker_email = "jucoriol@microsoft.com"
     def docker_repo = "hellojava"
     def docker_acct = "kubernetes"
-    def jenkins_registry_cred_id = "acr_creds"
+    def jenkins_registry_cred_id = "acr-credentials"
 
     // checkout sources
     checkout scm
